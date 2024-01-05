@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Pattaya&family=Playpen+Sans&family=Sriracha&display=swap');
+
+
+@keyframes fade-down{
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0,1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+h5 {
+    font-family: 'Akaya Kanadaka', system-ui;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Sriracha', cursive;
+}
+
+p {
+    font-family: 'Akaya Kanadaka', system-ui;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Sriracha', cursive;
+}
+
+.card{
+    transition-property: transform;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    transform-origin: center;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+
+.card {
+    animation: fade-down 1s;
+}
+
+.img{
+    animation: fade 10s;
+}
